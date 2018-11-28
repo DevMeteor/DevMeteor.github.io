@@ -1,7 +1,7 @@
 
 .des_wrapper{
     text-align: center;
-    background: url("../img/back.jpg");
+    background: url("../img/back.jpg") no-repeat;
     height: 768px;
 }
 
