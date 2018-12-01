@@ -1,8 +1,7 @@
 
 .des_wrapper{
     text-align: center;
-    background: url("../img/back.jpg") no-repeat;
-    backgroud-size:cover;
+    background: url("../img/back.jpg") repeat-x;
     height: 768px;
 }
 
