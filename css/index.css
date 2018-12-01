@@ -2,7 +2,7 @@
 .des_wrapper{
     text-align: center;
     background: url("../img/back.jpg") no-repeat;
-    backgroud-size:100%;
+    backgroud-size:cover;
     height: 768px;
 }
 
