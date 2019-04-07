@@ -4,41 +4,52 @@
 <head>
     <meta charset="utf-8" />
     <title>幕后</title>
-    <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport">
+    <meta name="viewport" content="width=device-width, minimum-scale=1, maximum-scale=1">
+    <link rel="stylesheet" href="https://apps.bdimg.com/libs/jquerymobile/1.4.5/jquery.mobile-1.4.5.min.css">
+    <script src="https://apps.bdimg.com/libs/jquery/1.10.2/jquery.min.js"></script>
+    <script src="https://apps.bdimg.com/libs/jquerymobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
 </head>
 
 <style>
-    .wrapper{
+    .wrapper {
         text-align: center;
+        align-content: center;
         padding-top: 20px;
     }
-    body{
+
+    body {
         background: #f7f8fa;
         text-align: center;
     }
-    p{
-        font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
+
+    p {
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
     }
-    button{
+
+    .btn {
         border: 0px;
         border-radius: 20px;
-        background: linear-gradient(to right,#ff32b2,#ff1560);
-        color: #ffffff;
+        background: linear-gradient(to right, #ff32b2, #ff1560);
         padding: 10px;
+        color: white;
         padding-left: 15px;
         padding-right: 15px;
+        width: 10%;
+        margin: 0 auto;
     }
 </style>
 
 <body>
-    <div class="wrapper">
-        <img src="app_logo.jpg" height="100px" height="100px" />
-        <p>幕后</p>
-        <p>人生的奔跑，不在于瞬间的爆发</p>
-        <p>取决于途中的坚持</p>
-        <button>敬请期待</button>
+    <div data-role="page">
+        <div data-role="content" class="wrapper">
+            <img src="app_logo.jpg" height="100px" height="100px" />
+            <p>幕后</p>
+            <p>人生的奔跑，不在于瞬间的爆发</p>
+            <p>取决于途中的坚持</p>
+            <p class="btn">敬请期待</p>
+        </div>
+        <img src="display.jpg" width="1080px" />
     </div>
-    <img src="display.jpg" width="1080px"/>
 </body>
 
 </html>
