@@ -66,3 +66,39 @@ p{
     background:black;
     text-align: center;
 }
+.icp{
+	color:white;
+    padding-top: 5px;
+    background:black;
+    text-align: center;
+    padding-bottom:5px;
+    font-size:15px
+}
+
+.beian-wrapper{
+    width: 100%;
+    background: black;
+}
+
+.beian{
+    width: 480px;
+    display: flex;
+    flex-direction: row;
+    margin: 0px auto;
+    text-align: center;
+}
+
+.gongan-logo{
+    width: 20px;
+    height: 20px;
+    margin: auto 0px;
+    margin-left: 50px;
+    align-self: center;
+}
+
+.gongan-link{
+    display: flex;
+    flex-direction: row;
+    margin: auto 0px;
+    align-self: center;
+}
