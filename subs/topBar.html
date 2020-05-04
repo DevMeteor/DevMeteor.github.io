@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="../css/common.css">
+    <link rel="stylesheet" type="text/css" href="../css/topBar.css">
+</head>
+
+<body>
+    <div class="top-bar">
+        <div style="display: flex;align-items: center;">
+            <img class="icon" src="../img/meteor.jpg">
+            <span class="name">Meteor</span>
+        </div>
+        <img class="menu" src="../img/menu.png">
+    </div>
+    <script src="../js/jquery-3.5.0.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $("a").attr("target", "_parent");
+        });
+        $(".menu").click(function(){
+            window.parent.toggleMenu()
+        })
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,135 @@
+html,body{
+    width: 350px;
+}
+
+html{
+    min-width: unset;
+}
+
+.side-bar{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 350px;
+    height: 100%;
+    background-color: white;
+}
+
+.icon{
+   width: 120px;
+   height: 120px;
+   border-radius: 120px; 
+   margin-top: 20%;
+}
+
+.name{
+    font-size: 40px;
+}
+
+.motto{
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    color: #808080;
+    font-size: 20px;
+    text-align: center;
+}
+
+.links{
+    display: flex;
+    flex-direction: column;
+    margin-top: 30px;
+    align-self: flex-end;
+    width: calc(50% + 42px);
+}
+
+.link-block{
+    display: flex;
+    flex-direction: row;
+    font-size: 28px;
+    align-items: flex-end;
+    margin-top: 20px;
+    cursor: pointer;
+}
+
+.link-block a{
+    color: #4d4d4d !important;
+    font-weight: normal !important;
+}
+
+.link-block a::after{
+    content: '';
+    background-size: 20px 20px;
+    width: 20px;
+    height: 20px;
+    margin-top: 12px;
+    margin-left: 10px;
+    position: absolute;
+}
+
+
+.link-block a:hover{
+    color: #27ce67 !important;
+}
+
+.link-block a:hover::after{
+    content: '';
+    background-size: 20px 20px;
+    width: 20px;
+    height: 20px;
+    margin-top: 12px;
+    margin-left: 10px;
+    position: absolute;
+}
+
+.lbb::after{
+    background: url('../img/wifi.png');
+}
+
+.lbb:hover::after{
+    background: url('../img/wifi_g.png');
+}
+
+.lbw::after{
+    background: url('../img/code.png');
+}
+
+.lbw:hover::after{
+    background: url('../img/code_g.png');
+}
+
+.lba::after{
+    background: url('../img/i.png');
+}
+
+.lba:hover::after{
+    background: url('../img/i_g.png');
+}
+
+.link-block img{
+    width: 20px;
+    height: 20px;
+    margin-left: 10px;
+    margin-bottom: 3px;
+}
+
+.link-divider{
+    width: 100%;
+    height: 1px;
+    background-color: #f2f2f2;
+    margin-top: 3px;
+}
+
+.bottom-links{
+    width: 180px;
+    display: flex;
+    flex-direction: row;
+    position: absolute;
+    bottom: 10px;
+    justify-content: space-around;
+}
+
+.bottom-links img{
+    width: 32px;
+    height: 32px;
+}

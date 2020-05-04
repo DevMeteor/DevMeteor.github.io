@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Upload</title>
+    <style>
+        input {
+            display: block;
+            margin-top: 10px;
+        }
+
+        html,
+        body {
+            width: 100%;
+            height: 100%;
+            margin: 0px;
+            padding: 0px;
+        }
+
+        body {
+            box-sizing: border-box;
+            padding: 10px;
+        }
+
+        #content img {
+            width: 60%;
+            display: block;
+            margin: 10px auto;
+        }
+    </style>
+</head>
+
+<body>
+    <div style="position: fixed;">
+        <input type="file" id="selector" accept=".md">
+        <input placeholder="标题" id="title">
+        <input placeholder="标签" id="labels">
+        <input disabled placeholder="摘要" id="summary">
+        <button id="upload" style="margin-top: 10px;">上传</button>
+        <span id="info" style="display: block;margin-top: 10px;"></span>
+    </div>
+    <div id="content" style="width: 60%;margin: 20px auto;box-sizing: border-box;"></div>
+    <script src="js/jquery-3.5.0.min.js"></script>
+    <script src="js/marked.js"></script>
+    <script>
+        function escape2Html(str) {
+            var arrEntities = { 'lt': '<', 'gt': '>', 'nbsp': ' ', 'amp': '&', 'quot': '"' };
+            return str.replace(/&(lt|gt|nbsp|amp|quot);/ig, function (all, t) { return arrEntities[t]; });
+        }
+        $('#selector').change(function () {
+            if (this.files.length != 0) {
+                var file = this.files[0];
+                var fr = new FileReader();
+                fr.readAsText(file);
+                fr.onload = function () {
+                    var text = fr.result
+                    var summary = escape2Html(marked(text).replace(RegExp("<pre><code [^>]+>[^]+</code></pre>", "g"), "").replace(RegExp("<h1 [^>]+>[^]+</h1>"), "").replace(RegExp("</?[^>]+>", "g"), "").replace(RegExp("\\t|\r|\n", "g"), " ").replace(" ", "").substring(0, 100))
+                    $("#summary").val(summary)
+                    $("#content").html(marked(fr.result))
+                    $("#title").val($("h1").text())
+                    $("#upload").click(function () {
+                        var data = new FormData()
+                        data.append("title", $("h1").text())
+                        data.append("summary", summary)
+                        data.append("labels", $("#labels").val())
+                        data.append("file", file)
+                        $.ajax({
+                            method: 'POST',
+                            url: 'https://devmeteor.cn/upload.php',
+                            data: data,
+                            processData: false,
+                            contentType: false,
+                            success(res) {
+                                $("#info").text(res)
+                            },
+                            error() {
+                                $("#info").text("error")
+                            }
+                        })
+                    })
+                }
+            }
+        })
+    </script>
+</body>
+
+</html>

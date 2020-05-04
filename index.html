@@ -1,85 +1,25 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
-    <meta charset="utf-8" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Meteor</title>
-    <link rel='icon' href='img/head.ico ' type='image/x-ico' />
     <link rel="stylesheet" type="text/css" href="css/common.css">
-    <link rel="stylesheet" type="text/css" href="css/index.css">
+    <link rel="stylesheet" type="text/css" href="css/blog.css">
 </head>
 
 <body>
-    <div class="nav_wrapper">
-        <div class="nav_bar">
-            <ul>
-                <li><a href="https://devmeteor.cn"><img src="img/head.png" class="logo"></a></li>
-                <li><a href="https://devmeteor.cn">主页</a></li>
-                <li><a href="works.html">作品</a></li>
-                <li><a href="https://github.com/DevMeteor">Github</a></li>
-                <li><a href="https://blog.csdn.net/qq_27502585">CSDN</a></li>
-                <li><a href="https://www.jianshu.com/u/65c6a3251bf9">简书</a></li>
-                <li><a href="contact.html">联系我</a></li>
-            </ul>
-        </div>
+    <iframe class="top-bar" src="subs/topBar.html"></iframe>
+    <iframe class="side-bar" src="subs/sideBar.html"></iframe>
+    <iframe class="m-links" src="subs/links.html"></iframe>
+    <div class="content">
+        <div class="list"></div>
+        <iframe class="bottom-info" src="subs/bottomInfo.html"></iframe>
     </div>
-    <div class="des_wrapper">
-        <img src="img/head.png" class="head">
-        <div class="des-con">
-            <p class="des">Meteor，哈尔滨师范大学计算机科学与信息工程学院计算机科学与技术本科在校生，哈尔滨师范大学党委宣传部100工作室技术部部员，安卓开发者。</p>
-            <div class="ex-con">
-                <p class="des">2016年开始学习安卓开发，对安卓开发有浓厚的兴趣。</p>
-            </div>
-            <div class="ex-con">
-                <p class="des">2018年10月   参加哈尔滨师范大学网络安全协会举办的Panther CTF获二等奖。</p>
-                <p class="des">
-                    2018年10月-12月 进行嵌入式的学习，参加第二届东北地区大学生光电设计竞赛专业竞技类，竞赛过程中对各类传感器的使用有了一定的了解，使用Arduino和红外传感器实现了简单的Arduino循迹小车，并通过简单的算法实现了基本的自动避障，同时掌握了3D打印机的基本使用。
-                </p>
-            </div>
-            <div class="ex-con">
-                <p class="des">2019年3月    参加“建行杯”第五届黑龙江省“互联网+”大学生创新创业大赛。</p>
-                <p class="des">2019年4月    参加高校微信小程序开发大赛。</p>
-                <p class="des">2019年5月    参加第三届东北地区大学生光电设计竞赛创意类获二等奖，参赛项目：一种智能化多终端油井远程监控系统，已于2020年3月获得实用新型专利授权。</p>
-            </div>
-            <div class="ex-con">
-                <p class="des">2019年11月   参加由腾讯公司举办的Q动校园2019QQ小程序开发大赛，参赛作品：<a href="works.html" style="color: #071e54">微哈师</a>。</p>
-            </div>
-            <div class="ex-con">
-                <p class="des">2020年1月-2020年3月  基于微哈师进一步开发微哈师2.0，进行了比较大的改进，精简了原有功能，独立进行了UI的设计和实现，同时对课程表相关功能进行了完善，增加了班级通知和任务提醒等功能，于3月末上线。</p>
-                <p class="des">2020年3月  参加首届东软杯云大赛、第六届“互联网+”大学生创新创业大赛校内选拔赛和“创青春”全国大学生创业大赛校内选拔赛。</p>
-            </div>
-            <div class="ex-con">
-                <p class="des">作品的详细情况可在<a href="works.html" style="color: #071e54">作品</a>中查看。</p>
-            </div>
-            <div class="ex-con">
-                <p class="des">新版个人网站正在开发中，敬请期待。</p>
-            </div>
-        </div>
-        <!-- <div>
-            <p class="doing">正在进行 ~ ~</p>
-            <hr class="divider">
-        </div>
-        <div class="doing-outer">
-            <div class="doing_wrapper">
-                <img src="img/toptower.png" width="40px" height="40px" style="float: left">
-                <div class="doing_text_wrapper">
-                    <p style="font-size: 18px">幕后</p>
-                    <p style="font-size: 12px">安卓应用</p>
-                </div>
-            </div>
-        </div> -->
-    </div>
-    <p class="copyright">Copyright © 2018-2020 DevMeteor. All right reserved.</p>
-    <div class="beian-wrapper">
-        <div class="beian">
-            <a class="icp" target="_blank" href="http://www.beian.miit.gov.cn">黑ICP备19003045号-2</a>
-            <a class="gongan-link" target="_blank"
-                href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=23108402000108">
-                <img class="gongan-logo" src="img/beian.png" />
-                <p>黑公网安备 23108402000108号</p>
-            </a>
-        </div>
-    </div>
+    <script src="js/jquery-3.5.0.min.js"></script>
+    <script src="js/blog.js"></script>
+    <script src="js/common.js"></script>
 </body>
 
 </html>

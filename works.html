@@ -1,71 +1,48 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
-    <meta charset="utf-8" />
-    <title>Meteor-作品</title>
-    <link rel='icon' href='img/head.ico ' type='image/x-ico' />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meteor</title>
     <link rel="stylesheet" type="text/css" href="css/common.css">
     <link rel="stylesheet" type="text/css" href="css/works.css">
 </head>
 
 <body>
-    <div class="nav_wrapper">
-        <div class="nav_bar">
-            <ul>
-                <li><a href="https://devmeteor.cn"><img src="img/head.png" class="logo"></a></li>
-                <li><a href="https://devmeteor.cn">主页</a></li>
-                <li><a href="works.html">作品</a></li>
-                <li><a href="https://github.com/DevMeteor">Github</a></li>
-                <li><a href="https://blog.csdn.net/qq_27502585">CSDN</a></li>
-                <li><a href="https://www.jianshu.com/u/65c6a3251bf9">简书</a></li>
-                <li><a href="contact.html">联系我</a></li>
-            </ul>
-        </div>
-    </div>
-    <div class="works_outer">
-        <p style="font-size: 30px;margin-bottom: 30px;">我的作品</p>
-        <hr class="divider">
-        <div class="works_wrapper">
-            <div class="works_block">
-                <p style="font-size: 25px">TableView</p>
-                <p style="margin-top: 10px;">作品状态：已完成</p>
-                <p style="margin-top: 10px">作品简介</p>
-                <p style="text-align: left;text-indent: 2em;margin-top: 5px;margin-bottom: 10px;">
-                    TableView是一个安卓课程表UI库，使用本库可以实现基本的课程显示，并可对课程表UI进行基本的自定义。</p>
-                <a href="https://github.com/DevMeteor/TableView" class="content-link">详情>></a>
+    <iframe class="top-bar" src="subs/topBar.html"></iframe>
+    <iframe class="side-bar" src="subs/sideBar.html"></iframe>
+    <iframe class="m-links" src="subs/links.html"></iframe>
+    <div class="content">
+        <div class="cards">
+            <div class="card">
+                <p class="work-name">微哈师</p>
+                <p class="work-status">作品状态：<span style="color: #77c159;;">已完成</span></p>
+                <p style="text-align: center;font-weight: bold;margin-top: 20px;">作品简介</p>
+                <p class="work-des">TableView是一个安卓课程表UI库，使用本库可以实现基本的课程显示，并可对课程表UI进行基本的自定义。</p>
+                <img src="img/whs.png" class="work-icon">
             </div>
-            <div class="works_block">
-                <p style="font-size: 25px">幕后</p>
-                <p style="margin-top: 10px;">作品状态：开发中</p>
-                <p style="margin-top: 10px">作品简介</p>
-                <p style="text-align: left;text-indent: 2em;margin-top: 5px;margin-bottom: 10px;">
-                    幕后是师大校园内的高品质短片分享平台，该APP旨在为热爱摄影的同学提供原创视频的发布、欣赏和经验交流的平台，让用户能最大程度地提高摄影技能。</p>
-                <p>敬请期待</p>
+            <div class="card">
+                <p class="work-name">TableView</p>
+                <p class="work-status">作品状态：<span style="color: #77c159;;">已完成</span></p>
+                <p style="text-align: center;font-weight: bold;margin-top: 20px;">作品简介</p>
+                <p class="work-des">TableView是一个安卓课程表UI库，使用本库可以实现基本的课程显示，并可对课程表UI进行基本的自定义。</p>
+                <img src="img/tableview.jpg" class="screenshot">
+                <a class="work-link" href="https://github.com/DevMeteor/TableView">详情 > ></a>
             </div>
-            <div class="works_block">
-                <p style="font-size: 25px">微哈师</p>
-                <p style="margin-top: 10px;">作品状态：已完成</p>
-                <p style="margin-top: 10px">作品简介</p>
-                <p style="text-align: left;text-indent: 2em;margin-top: 5px;margin-bottom: 10px;">
-                    微哈师是一款旨在便捷哈尔滨师范大学学生生活的小程序，经历了2019年12月的第一个版本，2020年1月进一步进行功能调整，重新设计开发了2.0版本，用户可以使用微哈师查询课表、查询成绩、制定学习计划,接收班级通知等。</p>
-                <div class="code-wrapper">
-                    <p class="content-link">详情<br><img class="whs-code" src="img/whs.png"></p>
-                </div>
+            <div class="card">
+                <p class="work-name">幕后</p>
+                <p class="work-status">作品状态：<span style="color: #ffa600;;">未上线</span></p>
+                <p style="text-align: center;font-weight: bold;margin-top: 20px;">作品简介</p>
+                <p class="work-des">幕后是师大校园内的高品质短片分享平台，该APP旨在为热爱摄影的同学提供原创视频的发布、欣赏和经验交流的平台，让用户能最大程度地提高摄影技能。</p>
+                <a class="work-link">敬请期待</a>
+                <img src="img/muhou.png" class="work-icon">
             </div>
         </div>
+        <iframe class="bottom-info" src="subs/bottomInfo.html"></iframe>
     </div>
-    <p class="copyright">Copyright © 2018-2020 DevMeteor. All right reserved.</p>
-    <div class="beian-wrapper">
-        <div class="beian">
-            <p class="icp">黑ICP备19003045号-2</p>
-            <a class="gongan-link" target="_blank"
-                href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=23108402000108">
-                <img class="gongan-logo" src="img/beian.png" />
-                <p>黑公网安备 23108402000108号</p>
-            </a>
-        </div>
-    </div>
+    <script src="js/jquery-3.5.0.min.js"></script>
+    <script src="js/common.js"></script>
 </body>
 
 </html>

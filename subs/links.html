@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="../css/common.css">
+    <link rel="stylesheet" type="text/css" href="../css/links.css">
+</head>
+
+<body>
+    <div class="links">
+        <div class="link-block">
+            <a class="lbb" href="../">博客</a>
+        </div>
+        <div class="link-divider"></div>
+        <div class="link-block">
+            <a class="lbw" href="../works.html">作品</a>
+        </div>
+        <div class="link-divider"></div>
+        <div class="link-block">
+            <a class="lba" href="../about.html">关于</a>
+        </div>
+        <div class="link-divider"></div>
+        <div class="link-block tp-links">
+            <a href="https://github.com/DevMeteor"><img src="../img/github.png"></a>
+            <a href="https://blog.csdn.net/qq_27502585"><img src="../img/csdn.png"></a>
+            <a href="https://www.jianshu.com/u/65c6a3251bf9"><img src="../img/jianshu.png"></a>
+        </div>
+    </div>
+    <script src="../js/jquery-3.5.0.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $("a").attr("target", "_parent");
+        });
+    </script>
+</body>
+
+</html>

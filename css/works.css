@@ -1,47 +1,96 @@
-.works_outer{
-    text-align: center;
-    background: url("../img/back.jpg") no-repeat center center;
-    background-size: cover;
-    height: 660px;
-    padding-top: 100px;
-}
-
-.works_wrapper{
+body{
+    background: url('../img/bg.jpg') no-repeat;
+    background-size: 100% 100%;
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
 }
 
-.works_block{
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    width: 320px;
+.card{
+    display: inline-flex;
+    width: 300px;
+    align-items: center;
+    margin-left: 30px;
+    position: relative;
     margin-top: 30px;
+    min-height: 540px;
 }
 
-.code-wrapper{
-    text-align: center;
+.cards{
+    height:100%;
+    overflow-y: scroll;
 }
 
-.content-link img{
-    display: none;
-    margin-top: 10px;
-    border-radius: 8px;
+.work-name{
+    font-size: 30px;
+    color: #333333;
+    font-weight: bold;
 }
 
-.content-link:hover img{
-    display: block;
-    width: 120px;
-    height: 120px;
+.work-status{
+    font-size: 15px;
+    margin-top: 5px;
+    font-weight: bold;
 }
 
-.content-link{
-    display: inline;
-    color: #0a235b;
-    font-size: 18px;
+.work-des{
+    color: #666666;
+    font-size: 16px;
+    text-indent: 2em;
+    margin-top: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
 }
 
-.whs-code{
-    margin: 0px auto;
+.work-link{
+    color: #808080;
+    position: absolute;
+    bottom:30px;
+    font-weight: bold;
+    text-decoration:none;
+}
+
+.work-link:hover{
+    color: #27ce67 !important;
+}
+
+.work-link:visited{
+    color: #808080;
+}
+
+.work-icon{
+    width: 256px;
+    height: 256px;
+    border-radius: 30px;
+    margin-top: 20px;
+}
+
+.screenshot{
+    height: 300px;
+}
+
+.m-links{
+    position: absolute;
+    z-index: 9999;
+}
+
+@media screen and (max-width:750px) {
+    .cards {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+@media screen and (min-width:950px) {
+    .cards {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+@media screen and (min-width:1200px){
+    .cards {
+        display: block;
+    }
 }
